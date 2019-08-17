@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ArticlePage from "./pages/ArticlePage";
+import MusicPage from "./pages/MusicPage";
+import UserPage from "./pages/UserPage";
+import {MyHeader} from './parts';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './styles.css';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <MyHeader />
+        <Router>
+          <Switch>
+            <Route path="/article" component={ArticlePage} />
+            <Route path="/music" component={MusicPage} />
+            <Route path="/user" component={UserPage} />
+            <Route path="/" component={HomePage} />
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
 }
-
-export default App;

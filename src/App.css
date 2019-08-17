@@ -1,5 +1,27 @@
-.App {
+.app {
+  width: 100vw;
+  min-height: 100vh;
   text-align: center;
+  background: #cccccc;
+}
+
+.app-sider {
+  width:120px;
+  min-height: 100vh;
+  float:left;
+  background: #333444;
+}
+
+.app-header {
+  height:36px;
+  background: #999999;
+}
+
+.app-main {
+  height:100vh;
+  padding-top:36px;
+  float:left;
+  background: #555555;
 }
 
 .App-logo {
@@ -8,7 +30,7 @@
   pointer-events: none;
 }
 
-.App-header {
+.App-headader {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -19,9 +41,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.App-lid
 
 @keyframes App-logo-spin {
   from {
