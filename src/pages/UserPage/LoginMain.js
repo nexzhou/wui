@@ -1,60 +1,39 @@
 import React from "react";
-import { Icon, Row, Col } from "antd";
-import { Route, Switch } from "react-router-dom";
+import { Icon, Row, Col, Form, Input, Checkbox, Button } from "antd";
 
 import "antd/dist/antd.css";
-
-function HtmlUserInfo() {
-  return (
-    <div className="main-content user-content">
-      <Row>
-        <Col offset={4} span={16}>
-          <Row>
-            <Col span={24}>
-              <h2 style={{ color: "#ffffff" }}>
-                <b>用户中心</b>
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={4}>
-              <Icon type="user" className="myicon" />
-            </Col>
-            <Col span={20}>
-              <Row>
-                <Col span={24}>
-                  <span>Duo Zhou</span>
-                  <span>Yun Zhou</span>
-                </Col>
-                <Col span={24}>
-                  <p>管理员</p>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={20}>设置密码</Col>
-            <Col span={4}>
-              <Icon type="right" />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </div>
-  );
-}
-
-function HtmlUserLogin() {
-  return <div className="main-content user-content">login </div>;
-}
 
 export default class LoginMain extends React.Component {
   render() {
     return (
-      <Switch>
-        <Route path="/user/login" component={LoginMain} />
-        <Route exact path="/user" component={HtmlUserInfo} />
-      </Switch>
+      <div className="main-content login-content">
+        <Row>
+          <Col offset={4} spne={16}>
+            <Form onSubmit={null} className="login-form">
+              <Form.Item>
+      
+                  <Input
+                    prefix={
+                      <Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />
+                    }
+                    placeholder="Username"
+                  />
+         
+              </Form.Item>
+              <Form.Item>
+             
+                  <Input
+                    prefix={
+                      <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />
+                    }
+                    type="password"
+                    placeholder="Password"
+                  />
+            </Form.Item>
+            </Form>
+          </Col>
+        </Row>
+      </div>
     );
   }
 }

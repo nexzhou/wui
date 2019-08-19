@@ -1,27 +1,26 @@
-
 .user-content {
-    color: #ffffff;
-    width: 100%;
-  }
-  
-  .user-content .myicon {
-    font-size: 64px;
-  }
-  
-  .login-content {
-    display: flex;
-    align-content: center;
-    align-items: center;
-  }
-  
-  .login-form {
-    max-width: 90vw;
-    background: #dddddd;
-  }
-  .login-content .login-form-forgot {
-    float: right;
-  }
-  .login-content .login-form-button {
-    width: 100%;
-  }
-  
+  color: #ffffff;
+  width: 100%;
+}
+
+.user-content .myicon {
+  font-size: 64px;
+}
+
+.login-content {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.login-form {
+  max-width: 90vw;
+  background: #eeeeee;
+  border-radius: 5px;
+}
+.login-content .login-form-forgot {
+  float: right;
+}
+.login-content .login-form-button {
+  width: 100%;
+}

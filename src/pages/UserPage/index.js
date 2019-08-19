@@ -13,6 +13,7 @@ const defaultTabs = [
   { path: "/user/login", icon: "login" }
 ];
 
+
 export default class UserPage extends React.Component {
   render() {
     return (
@@ -20,7 +21,7 @@ export default class UserPage extends React.Component {
         <MyNav tabs={defaultTabs} />
         <Switch>
           <Route exact path="/user" component={UserMain} />
-          {/* <Route path="/user/login" component={LoginMain} /> */}
+          <Route path="/user/login" component={LoginMain} />
         </Switch>
       </div>
     );

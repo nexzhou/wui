@@ -3,11 +3,13 @@ import React from "react";
 import MyNav from "../../parts/MyNav";
 import ArticleMain from "./ArticleMain";
 
+import "./index.css";
+
 const defaultTabs = [
   { path: "/", icon: "rollback" },
   { path: "/", icon: "home" },
-  { path: "/music/list", icon: "ordered-list" },
-  { path: "/music/favorite", icon: "heart" }
+  { path: "/article/list", icon: "ordered-list" },
+  { path: "/article/favorite", icon: "heart" }
 ];
 
 export default class ArticlePage extends React.Component {
@@ -15,7 +17,7 @@ export default class ArticlePage extends React.Component {
     return (
       <div className="layout-wrapper">
         <MyNav tabs={defaultTabs} />
-        <div>article</div>
+        <ArticleMain />
       </div>
     );
   }
