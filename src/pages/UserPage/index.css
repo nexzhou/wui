@@ -8,19 +8,35 @@
 }
 
 .login-content {
+  height: 92vh;
+  text-align: center;
   display: flex;
   align-content: center;
   align-items: center;
 }
 
+.form-wrapper {
+  min-width: 240px;
+  margin: auto auto;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #cccccc;
+}
+
 .login-form {
-  max-width: 90vw;
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
   background: #eeeeee;
   border-radius: 5px;
 }
-.login-content .login-form-forgot {
+.login-form .login-form-forgot {
   float: right;
 }
-.login-content .login-form-button {
+.login-form .login-rm {
+  float: left;
+}
+.login-form .login-form-button {
   width: 100%;
 }

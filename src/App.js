@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ArticlePage from "./pages/ArticlePage";
 import MusicPage from "./pages/MusicPage";
 import UserPage from "./pages/UserPage";
-import {MyHeader} from './parts';
+import { MyHeader } from "./parts";
 
-import './styles.css';
+import "./app.css";
 
 export default class App extends React.Component {
   render() {

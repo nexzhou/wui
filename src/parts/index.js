@@ -1,4 +1,5 @@
-import MyNav from './MyNav';
-import MyHeader from './MyHeader';
+import MyNav from "./MyNav";
+import MyHeader from "./MyHeader";
+import DriveInfo from "./DriveInfo";
 
-export {MyHeader, MyNav} ;
+export { MyHeader, MyNav, DriveInfo };

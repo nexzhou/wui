@@ -1,5 +1,7 @@
 import React from "react";
 import MyNav from "../../parts/MyNav";
+import DriveInfo from "../../parts/DriveInfo";
+
 import HomeMain from "./HomeMain";
 
 import "antd/dist/antd.css";
@@ -18,6 +20,7 @@ export default class HomePage extends React.Component {
       <div className="layout-wrapper">
         <MyNav tabs={homeTabs} />
         <HomeMain />
+        <DriveInfo />
       </div>
     );
   }

@@ -9,10 +9,9 @@ import "./index.css";
 const defaultTabs = [
   { path: "/", icon: "rollback" },
   { path: "/", icon: "home" },
-  { path: "/", icon: "menu" },
-  { path: "/user/login", icon: "login" }
+  { path: "/user/login", icon: "login" },
+  { path: "/", icon: "menu" }
 ];
-
 
 export default class UserPage extends React.Component {
   render() {
