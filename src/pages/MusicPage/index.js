@@ -14,7 +14,7 @@ const defaultTabs = [
 export default class MusicPage extends React.Component {
   render() {
     return (
-      <div className="layout-wrapper">
+      <div  className="app-layout">
         <MyNav tabs={defaultTabs} />
         <MusicMain />
       </div>

@@ -16,7 +16,7 @@ const defaultTabs = [
 export default class UserPage extends React.Component {
   render() {
     return (
-      <div className="layout-wrapper">
+      <div  className="app-layout">
         <MyNav tabs={defaultTabs} />
         <Switch>
           <Route exact path="/user" component={UserMain} />

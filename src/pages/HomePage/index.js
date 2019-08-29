@@ -1,6 +1,6 @@
 import React from "react";
 import MyNav from "../../parts/MyNav";
-import DriveInfo from "../../parts/DriveInfo";
+import MyHeader from "../../parts/MyHeader";
 
 import HomeMain from "./HomeMain";
 
@@ -9,7 +9,7 @@ import "./home.css";
 
 const homeTabs = [
   { path: "/user", icon: "user" },
-  { path: "/", icon: "home" },
+  { path: "/message", icon: "message" },
   { path: "/music", icon: "customer-service" },
   { path: "/setting", icon: "setting" }
 ];
@@ -17,10 +17,10 @@ const homeTabs = [
 export default class HomePage extends React.Component {
   render() {
     return (
-      <div className="layout-wrapper">
+      <div className="app-layout">
         <MyNav tabs={homeTabs} />
         <HomeMain />
-        <DriveInfo />
+        <MyHeader />
       </div>
     );
   }

@@ -15,7 +15,7 @@ const defaultTabs = [
 export default class ArticlePage extends React.Component {
   render() {
     return (
-      <div className="layout-wrapper">
+      <div className="app-layout">
         <MyNav tabs={defaultTabs} />
         <ArticleMain />
       </div>

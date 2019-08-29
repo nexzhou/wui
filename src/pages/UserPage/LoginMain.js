@@ -6,7 +6,7 @@ import "antd/dist/antd.css";
 export default class LoginMain extends React.Component {
   render() {
     return (
-      <div className="main-content login-content">
+      <div className="layout-main login-content">
         <div className="form-wrapper">
           <Form className="login-form">
             <Avatar size="large" src="http://douhy.com/foto/yhy.ico" />

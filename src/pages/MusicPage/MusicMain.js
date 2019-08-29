@@ -47,7 +47,7 @@ function HtmlMusicFavorite() {
 export default class MusicMain extends React.Component {
   render() {
     return (
-      <div className="main-content music-content">
+      <div className="layout-main music-content">
         <Row>
           <Col offset={4} span={16}>
             <Row style={{ marginTop: "32px" }}>

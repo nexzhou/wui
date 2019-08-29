@@ -16,13 +16,13 @@ export default class UserNav extends React.Component {
   render() {
     let HtmlTabs = null;
     HtmlTabs = this.props.tabs.map((tab, index) => (
-      <li>
+      <li key={index}>
         <Link to={tab.path}>
           <Icon type={tab.icon} />
         </Link>
       </li>
     ));
 
-    return <ul className="nav-left nav-items">{HtmlTabs}</ul>;
+    return <ul className="layout-nav nav-items">{HtmlTabs}</ul>;
   }
 }

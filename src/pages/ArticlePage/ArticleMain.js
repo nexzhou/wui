@@ -6,7 +6,7 @@ const { TabPane } = Tabs;
 export default class ArticleMain extends React.Component {
   render() {
     return (
-      <div class="main-content article-content">
+      <div class="layout-main article-content">
         <Row>
           <Col offset={4} span={16}>
             <Row className="article-tabs">

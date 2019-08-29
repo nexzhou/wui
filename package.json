@@ -2,8 +2,9 @@
   "name": "watd",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://otdx4.csb.app:8080",
   "dependencies": {
-    "antd": "3.22.0",
+    "antd": "3.22.1",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-router-dom": "5.0.1",
@@ -19,11 +20,7 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

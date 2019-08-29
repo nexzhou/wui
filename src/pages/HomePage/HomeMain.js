@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col, Icon } from "antd";
 import { Link } from "react-router-dom";
 
-import "antd/dist/antd.css";
 import "./home.css";
 
 const AppNames = [
@@ -23,7 +22,6 @@ const AppNames = [
   "weibo",
   "github",
   "camera",
-  "picture",
   "weibo",
   "audio",
   "camera",
@@ -36,8 +34,8 @@ const AppNames = [
 ];
 
 const AppItems = AppNames.map((item, index) => (
-  <Col className="app-item" span={6}>
-    <Link to="/article">
+  <Col className="app-col" span={6} key={index}>
+    <Link className="app-item" to="/article">
       <Icon type={item} />
     </Link>
   </Col>
@@ -46,8 +44,8 @@ const AppItems = AppNames.map((item, index) => (
 export default class HomeMain extends React.Component {
   render() {
     return (
-      <div className="main-layout app-list">
-        <Row type="flex" justify="start">
+      <div className="layout-main">
+        <Row className="app-items" type="flex" justify="start">
           {AppItems}
         </Row>
       </div>

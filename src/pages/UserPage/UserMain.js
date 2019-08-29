@@ -9,7 +9,7 @@ import "antd/dist/antd.css";
 export default class UserMain extends React.Component {
   render() {
     return (
-      <div className="main-content user-content">
+      <div className="layout-main user-content">
         <Row>
           <Col offset={4} span={16}>
             <Row>

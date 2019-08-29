@@ -6,15 +6,27 @@ export default class MyHeader extends React.Component {
   render() {
     return (
       <div className="layout-header">
-        <div className="header-drive">
-          <Link to="/home">
-            <Icon type="home" />
-          </Link>
-          <span className="drive-tool">
-            <Icon type="rollback" />
-          </span>
-        </div>
-        <div className="header-content">10:21</div>
+        <Row className="header-wrapper">
+          <Col className="header-drive" span={13}>
+            <Link className="header-item" to="/">
+              <Icon type="home" />
+            </Link>
+            <Link className="header-item" to="/home">
+              <Icon type="rollback" />
+            </Link>
+            <Icon className="header-item" type="car" />
+            <Icon className="header-item" type="key" />
+          </Col>
+          <Col className="header-time" span={1}>
+            10:45
+          </Col>
+          <Col className="header-info" span={10}>
+            <Icon className="header-item" type="bell" />
+            <Icon className="header-item" type="compass" />
+            <Icon className="header-item" type="wifi" />
+            <Icon className="header-item" type="align-left" rotate={270} />
+          </Col>
+        </Row>
       </div>
     );
   }

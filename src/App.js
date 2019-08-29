@@ -12,8 +12,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <MyHeader />
         <Router>
+          <MyHeader />
           <Switch>
             <Route path="/article" component={ArticlePage} />
             <Route path="/music" component={MusicPage} />
