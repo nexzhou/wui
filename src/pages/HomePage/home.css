@@ -1,12 +1,29 @@
+.main-home {
+  padding: 0 0;
+}
+
 .app-items {
   width: 100%;
-  text-align: center;
+  min-height: 23vh;
   font-size: 36px;
-  display: flex;
-  align-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .app-col {
   height: 23vh;
 }
+
+.app-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /*水平垂直居中*/
+  word-break: break-all;
+}
+
+/* .app-col:first-child {
+  background: #fafaaa;
+}
+.app-col:nth-child(5) {
+  background: #fbafaa;
+} */

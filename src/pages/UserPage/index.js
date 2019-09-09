@@ -7,16 +7,16 @@ import LoginMain from "./LoginMain";
 import "./index.css";
 
 const defaultTabs = [
-  { path: "/", icon: "rollback" },
-  { path: "/", icon: "home" },
   { path: "/user/login", icon: "login" },
+  { path: "/", icon: "logout" },
+  { path: "/", icon: "home" },
   { path: "/", icon: "menu" }
 ];
 
 export default class UserPage extends React.Component {
   render() {
     return (
-      <div  className="app-layout">
+      <div className="app-layout">
         <MyNav tabs={defaultTabs} />
         <Switch>
           <Route exact path="/user" component={UserMain} />

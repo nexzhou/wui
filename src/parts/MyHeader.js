@@ -7,7 +7,7 @@ export default class MyHeader extends React.Component {
     return (
       <div className="layout-header">
         <Row className="header-wrapper">
-          <Col className="header-drive" span={13}>
+          <Col className="header-drive" span={12}>
             <Link className="header-item" to="/">
               <Icon type="home" />
             </Link>
@@ -20,7 +20,7 @@ export default class MyHeader extends React.Component {
           <Col className="header-time" span={1}>
             10:45
           </Col>
-          <Col className="header-info" span={10}>
+          <Col className="header-info" span={11}>
             <Icon className="header-item" type="bell" />
             <Icon className="header-item" type="compass" />
             <Icon className="header-item" type="wifi" />

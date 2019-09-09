@@ -1,0 +1,47 @@
+.edit-box {
+  border: 1px solid #40a9ff;
+  background: #dddddd;
+  border-radius: 5px;
+}
+
+.edit-box {
+  color: #2a2a33;
+}
+
+.edit-title {
+  font-size: 1.15rem;
+  margin: 8px 12px;
+}
+
+.edit-box i {
+  color: #1cb03c;
+  font-size: 24px;
+}
+
+.edit-box textarea {
+  resize: none;
+  background: #e2e2e2;
+}
+
+.edit-divider {
+  height: 1px;
+  background: #40a9ff;
+  margin: 6px 0;
+}
+
+.edit-hint {
+  display: inline-block;
+  position: relative;
+  left: 0;
+}
+
+.edit-input {
+  display: inline-block;
+  width: 80%;
+}
+
+.edit-box textarea：focus {
+  background: #fe5522;
+  outline: none;
+  border: none;
+}

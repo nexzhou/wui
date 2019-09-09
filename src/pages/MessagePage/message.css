@@ -1,0 +1,12 @@
+.main-message {
+  background: #d3d3d3;
+}
+
+.message-wrapper {
+  background: #fafafa;
+  border-radius: 5px;
+}
+
+.main-message h2 {
+  color: #dddddd;
+}
