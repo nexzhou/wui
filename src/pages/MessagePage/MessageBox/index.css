@@ -1,12 +1,83 @@
-.core-box{border-bottom:1px solid #ededed;}
-.core-edit textarea, .core-edit input{margin:0.25rem 0;}
-.core-icon{min-height:5rem;}
-.core-time{font-size:0.75rem;color:#888888;}
-.core-email{font-size:1rem;color:#337ab7;}
-.core-btn,.core-delete{font-size:1rem;color:#337ab7;border:none;cursor:pointer;background:none;}
-.core-info{margin-bottom:0;}
-.comment-content,.reply-content{display:inline-block;min-height:36px;margin:0.25rem 0;padding:0.375rem 0.5rem;border-radius:4px;background:#d0dfef;}
-.reply-content{background:#b2e281;}
-.tri-before:before{content:'';width:0;height:0px;position:absolute;top:12px;left:-12px;border-width:6px;border-style:solid;border-color:transparent #d0dfef transparent transparent;}
-.tri-after:after{content:'';width:0;height:0px;position:absolute;top:12px;right:3px;border-width:6px;border-style:solid;border-color:transparent transparent transparent #b2e281;}
-.error{display:inline-block;color:red;}
+.message-box {
+  color: black;
+  border-radius: 4px;
+  background: #f5f5f5;
+  padding-top: 0.25rem;
+}
+.mere-edit textarea,
+.mere-edit input {
+  margin: 0.25rem 0;
+}
+
+.mere-icon {
+  min-height: 5rem;
+}
+.mere-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  word-break: break-all;
+}
+.mere-time {
+  font-size: 0.75rem;
+  color: #888888;
+}
+.mere-email {
+  font-size: 0.8rem;
+  color: #337ab7;
+}
+.mere-content {
+  display: inline-block;
+  min-height: 2rem;
+  margin: 0.25rem 0;
+  padding: 0.375rem 0.375rem;
+  color: #000000;
+  border-radius: 4px;
+  background: #d0dfef;
+}
+.reply-content {
+  background: #b2e281;
+}
+.tri-before:before {
+  content: "";
+  width: 0;
+  height: 0px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #d0dfef transparent transparent;
+}
+.tri-after:after {
+  content: "";
+  width: 0;
+  height: 0px;
+  position: absolute;
+  top: 14px;
+  right: -12px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #b2e281;
+}
+.mere-email {
+  margin: auto 0.75rem;
+}
+.mere-ctrl {
+  font-size: 0.8rem;
+  color: #337ab7;
+  margin: auto 0.75rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.error {
+  display: inline-block;
+  color: red;
+}
+
+.mere-divider {
+  height: 1px;
+  background: #dedede;
+}

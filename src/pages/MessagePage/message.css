@@ -2,11 +2,14 @@
   background: #d3d3d3;
 }
 
-.message-wrapper {
-  background: #fafafa;
+.main-message h2 {
+  padding-left: 0.5rem;
+  color: #1cb03c;
+  background: #ffffff;
   border-radius: 5px;
 }
 
-.main-message h2 {
-  color: #dddddd;
+.message-items {
+  background: #f5f5f5;
+  border-radius: 4px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Row, Col } from "antd";
+import { Row, Col, Icon } from "antd";
 
 import MessageBox from "./MessageBox";
 
@@ -16,9 +16,12 @@ export default class MessageMain extends React.Component {
           <Col offset={4} span={16}>
             <Row className="">
               <Col span={24}>
-                <h2>最新留言</h2>
+                <h2>
+                  <Icon type="wechat" /> 最新留言
+                </h2>
               </Col>
-              <Col span={24}>
+              <Col className="message-items" span={24}>
+                <MessageBox />
                 <MessageBox />
               </Col>
             </Row>
